@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Temperature = function(exchange) {
+            this.exchange = exchange
+            this.getCasius = function () {
+                return exchange
+            }
+            this.getFahrenheit = function () {
+                return exchange * 1.8 + 32
+            }
+            this.getKenvin = function () {
+                return exchange + 273.15
+            }
+        }
+        let temperature = new Temperature(25)
+        let fahrenheit = temperature.getFahrenheit()
+        let kenvin = temperature.getKenvin()
+        document.write("Độ C quy đổi sang F là: " + fahrenheit + "<br>")
+        document.write("Độ C quy đổi sang K là: " + kenvin)
+    </script>
+</body>
+</html>

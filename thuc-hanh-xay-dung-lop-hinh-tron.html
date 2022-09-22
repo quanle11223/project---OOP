@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let Cicle = function(radius) {
+    this.radius = radius
+    this.getredius = function () {
+      return radius
+    }
+    this.getArea = function () {
+      return Math.PI * radius * radius
+    }
+}
+let circle = new Cicle(2)
+let radius = circle.getredius()
+let area = circle. getArea()
+alert("radius: " + radius + "; area " + area)
+</script>
+</body>
+</html>
